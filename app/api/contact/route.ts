@@ -64,7 +64,7 @@ export async function POST(req: Request) {
       await resend.emails.send({
         from: "Amaravati RoboValley <onboarding@resend.dev>", // later: no-reply@robovalley.in
         to: [TO_EMAIL],
-        reply_to: email, // so you can reply directly
+        replyTo: email, // so you can reply directly
         subject: `New RoboValley contact from ${name}`,
         html: `
           <h2>New Contact Form Submission – Amaravati RoboValley</h2>
